@@ -8,7 +8,7 @@ const webpackConfig = require((globalConfig.webpackConfigFile))
 devMiddleware = webpackMiddleware(webpack(webpackConfig))
 
 module.exports = (ctx, next) => {
-  return devMiddleware(ctx, async function(ctx, next) {
+  return devMiddleware(ctx, async function() {
       console.log('history模式')
       // history 模式
       const reqPath = ctx.url
