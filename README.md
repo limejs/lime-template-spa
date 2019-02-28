@@ -77,39 +77,39 @@ DEBUG=lime:* npm run dev
 
 * babel.config.js
 
-babel7 的整体项目配置，会对整个项目生效。如有子 package 自定义 babel 的需求，请在子项目中创建 `.babelrc`
+    babel7 的整体项目配置，会对整个项目生效。如有子 package 自定义 babel 的需求，请在子项目中创建 `.babelrc`
 
 * .browsersrclist
 
-autoprefix 基于此配置加载 css 前缀
+    autoprefix 基于此配置加载 css 前缀
 
-babel 基于此配置创建 polyfill
+    babel 基于此配置创建 polyfill
 
 
 * postcss.config.js
 
-postcss 配置，默认加载了 autoprefix
+    postcss 配置，默认加载了 autoprefix
 
 ## 项目配置
 
 * 全局项目配置
 
-根目录下的 config.js
+    根目录下的 config.js
 
-```js
-module.exports = {
-  webpackConfigFile: resolve('./frontend/webpack.config.js'), // webpack编译配置
-  feDist: resolve('./backend/fe-dist') // 前端编译目标地址
-}
-```
+    ```js
+    module.exports = {
+    webpackConfigFile: resolve('./frontend/webpack.config.js'), // webpack编译配置
+    feDist: resolve('./backend/fe-dist') // 前端编译目标地址
+    }
+    ```
 
-其中 backend 进行渲染时，会依据 feDist；前端编译时会依据 webpackConfigFile
+    其中 backend 进行渲染时，会依据 feDist；前端编译时会依据 webpackConfigFile
 
 * 后端 backend 配置
 
-backend/config/site.js
+    backend/config/site.js
 
-配置详见 lime 文档
+    配置详见 lime 文档
 
 ## TODO
 
