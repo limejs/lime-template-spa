@@ -7,10 +7,10 @@ module.exports = {
     view(proto) {
       proto.spa = async(ctx, next) => {
         if (isDev) {
-          devLogic(ctx, next)
+          await devLogic(ctx, next)
         }
         else {
-          prodLogic(ctx, next)
+          await prodLogic(ctx, next)
         }
       }
     }
