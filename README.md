@@ -1,24 +1,25 @@
 # lime-template-spa
 
-本项目模板是基于 Vue+[lime](https://www.limejs.cn) 的 `前后端分离` 架构 SPA 应用项目模板。由于是异步渲染模板的，不利于 SEO，因此适用于开发 `内网管理端`，`MIS、控制台等外网后台系统` 等客户端富交互的应用。
+本项目模板是基于 [Vue](https://cn.vuejs.org/)+[lime](https://www.limejs.cn) 的 `前后端分离` 架构 SPA 应用项目模板。适用于开发 `内网管理端`，`MIS、控制台等外网后台系统` 等客户端富交互的应用。
 
 
 ## Info && Feature
 
-* 基于vue cli 2 时期风格，所有配置暴露在项目中
-* 升级为 babel7, webpack4
-* 实现了开发模式的 自动模块热替换
+* 基于vue cli 2 时期风格，所有配置支持灵活自定义
+* 升级为 babel7, webpack4；更合理的 babel 配置方式
+* 开发模式支持自动重启和模块热替换, 生产环境支持静态资源缓存
+* todo: 生产环境支持 PM2 等环境的部署脚本
 
-## 何为 SFB 前后端分离
+## SFB
 
-这里的前后端分离有两层含义:
+SFB 全称 `Separation of Front and Back ends`，即前后端分离的。这里的前后端分离有两层含义:
 
 1. 前端采用 MVVM 框架 Vue.js 进行浏览器端的模板渲染，页面数据通过 JSON 的方式从服务器端 API 异步获取
 2. 前端采用 Node.js 技术完全接管 Web 的接入层和中间层。与后端在工作分工上做到完全分离。
 
-本项目样板在理念和设计上，包含了以上两层含义。这样的框架或样板，也可以称之为 SFB 结构的框架 `Separation of Front and Back ends`。
+本项目样板在理念和设计上，包含了以上两层含义。这样的框架或样板，可以称之为 SFB 结构的框架
 
-如果你需要更快的首屏渲染时间和SEO，则可能需要使用 [lime-template-ssr](https://github.com/limejs/lime-template-ssr) 模板。该项目样板提供了服务端直出的能力。
+如果你需要更快的首屏渲染时间和SEO，那么 [lime-template-ssr](https://github.com/limejs/lime-template-ssr) 模板会更适合。该 SSR 项目样板提供了基于 [VUE SSR](https://ssr.vuejs.org/zh/) 的服务端直出的能力。
 
 
 ## Usage
