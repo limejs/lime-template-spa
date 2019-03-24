@@ -20,7 +20,7 @@ let conf = {
   },
   mode: process.env.NODE_ENV || 'development',
   entry: ['@babel/polyfill', path.join(__dirname, './src/entry.js')],
-  devtool: isDev ? 'eval' : 'source-map',
+  devtool: isDev ? 'eval-source-map' : 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '.styl', '.stylus', '.css', '.vue']
   },
